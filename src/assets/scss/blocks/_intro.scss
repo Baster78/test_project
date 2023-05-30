@@ -67,10 +67,16 @@
 }
 
 .intro__slider {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.intro__slider_inner {
   display: flex;
   justify-content: space-between;
-
-  margin-top: 30px;
 }
 
 .intro__slider_item {
