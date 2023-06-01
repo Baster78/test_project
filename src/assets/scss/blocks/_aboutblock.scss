@@ -38,60 +38,6 @@
    font-size: 15px;
 }
 
-.about {
-   margin-top: 80px;
-   display: flex;
-   justify-content: space-between;
-}
-
-.about__item {
-   position: relative;
-
-   width: 380px;
-
-   background-color: #95e1d3;
-
-   &:hover .about__text {
-      opacity: 1;
-   }
-
-   &:hover .about__image {
-      transform: translate3d(-10px, -10px, 0);
-   }
-
-   &:hover .about__image img {
-      opacity: 0.1;
-   }
-}
-
-.about__image {
-   background: linear-gradient(to bottom, #f38181, #fce38a);
-
-   transition: transform 0.2s linear;
-
-   & img {
-      display: block;
-      transition: opacity 0.2s linear;
-   }
-}
-
-.about__text {
-   width: 100%;
-   text-transform: uppercase;
-   color: #fff;
-   font-weight: bold;
-   font-size: 18px;
-   text-align: center;
-   opacity: 0;
-
-   position: absolute;
-   top: 50%;
-   left: 0;
-   z-index: 2;
-   transform: translate3d(0, -50%, 0);
-   transition: opacity 0.2s linear;
-}
-
 // statistics
 
 .statistics {

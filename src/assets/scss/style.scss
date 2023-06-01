@@ -5,6 +5,10 @@
 @import "blocks/aboutblock";
 @import "blocks/services";
 @import "blocks/device";
+@import "blocks/whatwedo";
+@import "blocks/review";
+@import "blocks/command";
+@import "blocks/logo";
 
 body {
    font-family: "Montserrat", sans-serif;
@@ -32,4 +36,8 @@ hr {
    margin: 20px 0;
    border: 0;
    background-color: #e5e5e5;
+}
+
+.section.gray {
+   background-color: #f8f8f8;
 }

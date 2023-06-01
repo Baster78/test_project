@@ -311,6 +311,74 @@ template {
   display: none;
 }
 
+.card {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__item {
+  width: 380px;
+}
+.card__item:hover .card__text {
+  opacity: 1;
+}
+.card__item:hover .card__image {
+  transform: translate3d(-10px, -10px, 0);
+}
+.card__item:hover .card__image img {
+  opacity: 0.1;
+}
+
+.card__inner {
+  position: relative;
+  background-color: #95e1d3;
+}
+
+.card__image {
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+  transition: transform 0.2s linear;
+}
+.card__image img {
+  display: block;
+  transition: opacity 0.2s linear;
+}
+
+.card__text {
+  width: 100%;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -50%, 0);
+  transition: opacity 0.2s linear;
+}
+
+.card__info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card__name {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.card__prof {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  color: #999;
+}
+
 .header {
   width: 100%;
   position: absolute;
@@ -505,52 +573,6 @@ template {
   font-size: 15px;
 }
 
-.about {
-  margin-top: 80px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.about__item {
-  position: relative;
-  width: 380px;
-  background-color: #95e1d3;
-}
-.about__item:hover .about__text {
-  opacity: 1;
-}
-.about__item:hover .about__image {
-  transform: translate3d(-10px, -10px, 0);
-}
-.about__item:hover .about__image img {
-  opacity: 0.1;
-}
-
-.about__image {
-  background: linear-gradient(to bottom, #f38181, #fce38a);
-  transition: transform 0.2s linear;
-}
-.about__image img {
-  display: block;
-  transition: opacity 0.2s linear;
-}
-
-.about__text {
-  width: 100%;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: bold;
-  font-size: 18px;
-  text-align: center;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 2;
-  transform: translate3d(0, -50%, 0);
-  transition: opacity 0.2s linear;
-}
-
 .statistics {
   background-color: #95e1d3;
 }
@@ -613,6 +635,7 @@ template {
 }
 
 .section__devices {
+  margin-bottom: 40px;
   background: url("../images/devices-bg.jpg") center no-repeat;
   background-size: cover;
   padding-bottom: 0;
@@ -633,6 +656,119 @@ template {
   bottom: -80px;
   right: 0;
   z-index: 3;
+}
+
+.we__do {
+  display: flex;
+}
+
+.we__do-item {
+  width: 50%;
+}
+
+.accordeon--item {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+.accordeon--item.active .accordeon__content {
+  display: block;
+}
+.accordeon--item.active .accordeon__header:after {
+  margin-top: 5px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.accordeon--item.active .accordeon__header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordeon__header {
+  position: relative;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  padding: 15px 20px 15px 65px;
+}
+.accordeon__header:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+  transform: translateY(-50%) rotate(135deg);
+}
+
+.accordeon__icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.accordeon__content {
+  display: none;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #999;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.accordeon__title {
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.reviews {
+  padding: 0 110px;
+}
+
+.reviews__item {
+  padding-left: 205px;
+  position: relative;
+}
+
+.reviews__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border: 2px solid #95e1d3;
+}
+
+.reviews__text {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  color: #999;
+}
+
+.reviews__author {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  color: #333;
+}
+.reviews__author:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 3px;
+  margin-right: 10px;
+  background-color: #f38181;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
 }
 
 body {
@@ -661,4 +797,8 @@ hr {
   margin: 20px 0;
   border: 0;
   background-color: #e5e5e5;
+}
+
+.section.gray {
+  background-color: #f8f8f8;
 }
