@@ -1,27 +1,29 @@
 .section__devices {
-   margin-bottom: 40px;
+  margin-bottom: 40px;
 
-   background: url("../images/devices-bg.jpg") center no-repeat;
-   background-size: cover;
+  background: url("../images/devices-bg.jpg") center no-repeat;
+  background-size: cover;
 
-   padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .devices {
-   position: relative;
+  position: relative;
 
-   width: 100%;
-   max-width: 600px;
-   margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .devices__item {
-   display: block;
+  display: block;
+  max-width: 100%;
+  height: auto;
 
-   &--iphone {
-      position: absolute;
-      bottom: -80px;
-      right: 0;
-      z-index: 3;
-   }
+  &--iphone {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 3;
+  }
 }

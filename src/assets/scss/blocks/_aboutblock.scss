@@ -1,75 +1,76 @@
 .section--about {
-   padding: 80px 0;
+  padding: 80px 0;
 }
 
 .section__about_header {
-   width: 100%;
-   max-width: 950px;
-   margin: 0 auto 50px;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 50px;
 
-   text-align: center;
+  text-align: center;
 }
 
 .section__about_header-subtitle {
-   font-family: "Kaushan Script", cursive;
-   font-size: 24px;
-   color: #333;
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: #333;
 }
 
 .section__about_header-title {
-   font-size: 30px;
-   font-weight: 700;
-   color: #333;
-   text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
 
-   &::after {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 3px;
-      margin: 30px auto;
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
 
-      background-color: #f38181;
-   }
+    background-color: #f38181;
+  }
 }
 
 .section__about_header-text {
-   color: #999;
-   font-size: 15px;
+  color: #999;
+  font-size: 15px;
 }
 
 // statistics
 
 .statistics {
-   background-color: #95e1d3;
+  background-color: #95e1d3;
 }
 
 .stat {
-   display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .statistics__item {
-   flex: 1 1 0;
-   padding: 70px 25px;
+  flex: 1 1 0;
+  padding: 70px 25px;
 
-   border-left: 1px solid #b5eae0;
+  border-left: 1px solid #b5eae0;
 
-   text-align: center;
-   color: #fff;
+  text-align: center;
+  color: #fff;
 
-   &:last-child {
-      border-right: 1px solid #b5eae0;
-   }
+  &:last-child {
+    border-right: 1px solid #b5eae0;
+  }
 }
 
 .stat__count {
-   font-size: 72px;
-   font-weight: bold;
-   line-height: 1;
-   margin-bottom: 10px;
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
 .stat__text {
-   font-size: 14px;
-   text-transform: uppercase;
+  font-size: 14px;
+  text-transform: uppercase;
 }

@@ -14,6 +14,8 @@
 @import "blocks/clients";
 @import "blocks/blog";
 @import "blocks/openmap";
+@import "blocks/footer";
+@import "blocks/media";
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -30,8 +32,13 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  padding: 0 15px;
+  max-width: 1230px;
   margin: 0 auto;
+}
+
+.page {
+  overflow: hidden;
 }
 
 hr {
